@@ -1,1 +1,1 @@
-# try-application
+# lab application
