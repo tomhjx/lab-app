@@ -8,4 +8,4 @@ server:
     min-response-size: 4KB
 spring:
   application:
-    name: trial-client-api
+    name: lab-client-api
