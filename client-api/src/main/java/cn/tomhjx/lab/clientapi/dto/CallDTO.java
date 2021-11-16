@@ -1,4 +1,4 @@
-package cn.tomhjx.trial.clientapi.dto;
+package cn.tomhjx.lab.clientapi.dto;
 
 import javax.validation.constraints.NotBlank;
 

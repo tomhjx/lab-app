@@ -3,17 +3,17 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<groupId>cn.tomhjx.trial</groupId>
+		<groupId>cn.tomhjx.lab</groupId>
 		<artifactId>parent</artifactId>
 		<version>${revision}</version>
 	</parent>
-	<groupId>cn.tomhjx.trial</groupId>
+	<groupId>cn.tomhjx.lab</groupId>
 	<artifactId>client-api</artifactId>
 	<packaging>jar</packaging>
 	<name>client-api</name>
 	<dependencies>
 		<dependency>
-			<groupId>cn.tomhjx.trial</groupId>
+			<groupId>cn.tomhjx.lab</groupId>
 			<artifactId>core</artifactId>
 			<version>${revision}</version>
 		</dependency>

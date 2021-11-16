@@ -1,4 +1,4 @@
-package cn.tomhjx.trial.clientapi.controller;
+package cn.tomhjx.lab.clientapi.controller;
 
 import java.util.Map;
 
@@ -11,9 +11,9 @@ import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import cn.tomhjx.trial.clientapi.dto.CallDTO;
-import cn.tomhjx.trial.clientapi.vo.ProbeVO;
-import cn.tomhjx.trial.core.vo.ApiResponseVO;
+import cn.tomhjx.lab.clientapi.dto.CallDTO;
+import cn.tomhjx.lab.clientapi.vo.ProbeVO;
+import cn.tomhjx.lab.core.vo.ApiResponseVO;
 
 @RestController
 @RequestMapping("/monitor")

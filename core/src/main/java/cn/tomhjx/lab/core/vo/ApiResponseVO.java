@@ -1,4 +1,4 @@
-package cn.tomhjx.trial.core.vo;
+package cn.tomhjx.lab.core.vo;
 
 import lombok.Data;
 

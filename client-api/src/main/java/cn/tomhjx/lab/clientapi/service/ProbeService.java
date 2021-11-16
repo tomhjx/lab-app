@@ -1,4 +1,4 @@
-package cn.tomhjx.trial.clientapi.service;
+package cn.tomhjx.lab.clientapi.service;
 
 import org.springframework.stereotype.Service;
 

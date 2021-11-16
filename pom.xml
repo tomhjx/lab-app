@@ -8,7 +8,7 @@
 		<version>2.5.6</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>cn.tomhjx.trial</groupId>
+	<groupId>cn.tomhjx.lab</groupId>
 	<artifactId>parent</artifactId>
 	<version>${revision}</version>
 	<packaging>pom</packaging>
@@ -17,7 +17,7 @@
 		<module>core</module>
     </modules>
 
-	<name>Trial Application</name>
+	<name>Lab Application</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<revision>0.0.1-SNAPSHOT</revision>

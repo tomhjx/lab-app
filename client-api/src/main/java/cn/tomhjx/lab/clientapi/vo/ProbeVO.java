@@ -1,4 +1,4 @@
-package cn.tomhjx.trial.clientapi.vo;
+package cn.tomhjx.lab.clientapi.vo;
 
 import lombok.Data;
 
