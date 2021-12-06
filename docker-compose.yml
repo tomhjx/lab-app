@@ -1,0 +1,16 @@
+version: '3.5'
+services:
+  console:
+      image: maven:3.3.3-jdk-8
+      privileged: true
+      cap_add:
+        - ALL
+      working_dir: /usr/src/mymaven
+      # 测试用例 docker-compose run --rm javademo mvn test -Dtest=UserMapperTest#testInsertSuccess
+      command: /bin/sh -c "mvn clean package -DskipTests && java -jar ./console/target/*.jar --debug"
+      volumes:
+        - .:/usr/src/mymaven
+        - /Users/tom/.m2:/root/.m2
+networks:
+  default:
+    name: lab

@@ -13,8 +13,9 @@
 	<version>${revision}</version>
 	<packaging>pom</packaging>
 	<modules>
-		<module>client-api</module>
+		<!-- <module>client-api</module> -->
 		<module>core</module>
+		<module>console</module>
     </modules>
 
 	<name>Lab Application</name>
@@ -27,9 +28,8 @@
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
+			<artifactId>spring-boot-starter</artifactId>
 		</dependency>
-
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
@@ -47,14 +47,4 @@
 			<version>2.0.1.Final</version>
 		</dependency>
 	</dependencies>
-
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-		</plugins>
-	</build>
-
 </project>
