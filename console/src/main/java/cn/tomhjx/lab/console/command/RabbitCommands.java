@@ -22,4 +22,9 @@ public class RabbitCommands {
     public void pull() {
         rabbitService.pull();
     }
+
+    @ShellMethod("Declare")
+    public void declare() {
+        rabbitService.declare();
+    }
 }

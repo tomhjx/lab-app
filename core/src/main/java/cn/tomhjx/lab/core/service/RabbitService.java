@@ -26,7 +26,7 @@ public class RabbitService {
     private AmqpAdmin rabbitAdmin;
 
     public void declare() {
-        rabbitAdmin.deleteQueue(QUORUM_A_QUEUE);
+        // rabbitAdmin.deleteQueue(QUORUM_A_QUEUE);
         
         FanoutExchange fanoutExchange = new FanoutExchange(A_EXCHANGE);
         Queue queue = QueueBuilder.durable(QUORUM_A_QUEUE).quorum().build();
