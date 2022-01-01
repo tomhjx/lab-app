@@ -51,4 +51,4 @@ spring:
           password: 123456
 app:
   history:
-    file: "/data/log/spring-shell.log"
+    file: "/data/log/app/spring-shell.log"
