@@ -22,6 +22,9 @@ public class RabbitService {
     private RabbitTemplate rabbitTemplate;
 
     @Autowired
+    private UtilService utilService;
+
+    @Autowired
     // private RabbitAdmin
     private AmqpAdmin rabbitAdmin;
 
@@ -39,7 +42,7 @@ public class RabbitService {
     } 
 
     public void publish() {
-        rabbitTemplate.convertAndSend(A_EXCHANGE, "", "this is my test.");
+        rabbitTemplate.convertAndSend(A_EXCHANGE, "", "this is a message, "+utilService.getCurTime()+". ");
         System.out.println("this is rabbit mq publish.");
     }
 

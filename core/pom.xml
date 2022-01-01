@@ -12,11 +12,32 @@
 	<packaging>jar</packaging>
 	<name>${project.artifactId}</name>
 	<description>Demo project for Spring Boot</description>
+	<properties>
+		<java.version>8</java.version>
+		<mysql-connector-java.version>8.0.27</mysql-connector-java.version>
+		<dynamic-datasource.version>3.1.1</dynamic-datasource.version>
+		<mybatis-plus.version>3.4.3</mybatis-plus.version>
+	</properties>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.amqp</groupId>
 			<artifactId>spring-rabbit</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>${mysql-connector-java.version}</version>
+		</dependency>
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-boot-starter</artifactId>
+			<version>${mybatis-plus.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>dynamic-datasource-spring-boot-starter</artifactId>
+			<version>${dynamic-datasource.version}</version>
+        </dependency>
 	</dependencies>
     <build>
         <plugins>
@@ -30,6 +51,7 @@
                 </configuration>
             </plugin>
         </plugins>
+		
     </build>
 
 </project>

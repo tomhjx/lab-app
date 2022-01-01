@@ -10,6 +10,7 @@ services:
       command: /bin/sh -c "mvn clean package -DskipTests && java -jar ./console/target/*.jar --debug"
       volumes:
         - .:/usr/src/mymaven
+        - /Users/tom/Work/log/app/lab/:/data/log/app
         - /Users/tom/.m2:/root/.m2
 networks:
   default:
