@@ -17,8 +17,14 @@
 		<mysql-connector-java.version>8.0.27</mysql-connector-java.version>
 		<dynamic-datasource.version>3.1.1</dynamic-datasource.version>
 		<mybatis-plus.version>3.4.3</mybatis-plus.version>
+		<redisson.version>3.16.7</redisson.version>
+		<redis.version>2.6.0</redis.version>
 	</properties>
 	<dependencies>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-pool2</artifactId>
+        </dependency>
 		<dependency>
 			<groupId>org.springframework.amqp</groupId>
 			<artifactId>spring-rabbit</artifactId>
@@ -32,6 +38,11 @@
             <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus-boot-starter</artifactId>
 			<version>${mybatis-plus.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.redisson</groupId>
+			<artifactId>redisson-spring-data-26</artifactId>
+            <version>${redisson.version}</version>
         </dependency>
         <dependency>
             <groupId>com.baomidou</groupId>
